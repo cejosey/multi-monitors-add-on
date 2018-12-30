@@ -397,8 +397,12 @@ const MultiMonitorsThumbnailsSlider = new Lang.Class({
         }
     	this.parent();
 	},
+
+	_getAlwaysZoomOut() {
+		return true;
+	},
 	
-	_getAlwaysZoomOut: OverviewControls.ThumbnailsSlider.prototype._getAlwaysZoomOut,
+//	_getAlwaysZoomOut: OverviewControls.ThumbnailsSlider.prototype._getAlwaysZoomOut,
     getNonExpandedWidth: OverviewControls.ThumbnailsSlider.prototype.getNonExpandedWidth,
     _getSlide: OverviewControls.ThumbnailsSlider.prototype._getSlide,
     getVisibleWidth: OverviewControls.ThumbnailsSlider.prototype.getVisibleWidth,
